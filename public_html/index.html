@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+        crossorigin="anonymous">
+
+    <title>Capital cities</title>
+
+    <script>
+    function CapitalList()
+    {
+
+    let Cities, outputText;
+
+    Cities = ["Russia: Moscow", "Canada: Ottawa", "China: Beijing", "USA: Washington DC", "Brazil: Brasilia", "Australia: Canberra", "India: New Delhi" ];
+
+    outputText = "<ul>";
+
+    for (let i = 0; i < Cities.length; i++) 
+    {
+        outputText += "<li>" + Cities[i] + "</li>"; 
+    }
+
+    outputText += "</ul>";
+    document.getElementById("Empty").innerHTML = outputText;
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1></h1>
+        </header>
+        <main>
+            <p><strong>Capital Cities of the world's 7 biggest countries</strong></p>
+
+            <div id="capital_cities">
+                <p id="Empty"><em>EMPTY</em></p>
+            </div>
+
+            <input class="btn btn-primary" type="button" onclick="CapitalList()"
+                value="Display Capital Cities">
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
